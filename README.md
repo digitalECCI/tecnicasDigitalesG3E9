@@ -33,7 +33,7 @@ se definen los valores de entrada que se aplicarán al módulo para probarlo cad
 <img width="1590" height="293" alt="numeros primos 05" src="https://github.com/user-attachments/assets/c4b405ab-1da9-49b6-a55c-d2ccf26eae9e" />
 Este bloque es el encargado de controlar la simulación y generar los resultados visuales
 
-## SIMULADOR NUMEROS PRIMOS 
+## SIMULADOR NUMEROS PRIMOS VERILOG 
 <img width="992" height="637" alt="NUMEROS PRIMOS SIMULADOR" src="https://github.com/user-attachments/assets/ce51be9d-5ae8-4a5d-960a-debc53a4cf07" />
 
 Cuando ingresamos a la terminal de visual studio code y ejecutamos el simulador de verilog el cual en el nos muestra las entradas y salidas ya ejecutadas, del mismo modo nos muestra los 8 casos, en donde (A,B,C) son entradas y S la SALIDA 
@@ -144,3 +144,6 @@ Este bloque es el encargado de controlar la simulación y generar los resultados
 
 ## SIMULACION VERILOG.
 
+<img width="1197" height="646" alt="SUMADOR V" src="https://github.com/user-attachments/assets/7be19537-9948-4d53-a97b-2a264a7187ea" />
+
+EN LA IMAGEN MUESTRA EL SUMADOR CON SUS ENTRADAS, SALIDAS Y SUS POSIBLES OCHO CASOS IMPLEMENTADOS EN VISUAL STUDIO CODE.
