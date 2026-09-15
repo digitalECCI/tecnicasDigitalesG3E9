@@ -91,12 +91,21 @@ En el codigo (initial begin) en los cuales se encuentras los 4 posibles casos o 
 <img width="1590" height="293" alt="numeros primos 05" src="https://github.com/user-attachments/assets/57477ece-dd95-4416-8416-d4c079fce343" />
 Este bloque es el encargado de controlar la simulación y generar los resultados visuales
 
-## SIMULACION VERILOG
 
-COMPUERTA AND
+
+## COMPUERTA AND
+
+ya que la tabla de verdad se empresa de la sigueinte manera:
+
+![alt text](../../../../imagenes/Compuerta-AND-y-su-tabla-de-verdad.png)
+
+
+en el simulador verilog cuando A y B sean 1 la salida nos daria 1, por lo tanto eso nos demuestra la compuerta and.
+
 <img width="1343" height="733" alt="and" src="https://github.com/user-attachments/assets/400f3c26-7585-4a1a-9690-94329a3af2a0" />
 
 COMPUERTA NOT
+
 <img width="1355" height="737" alt="NOT" src="https://github.com/user-attachments/assets/0ae08733-ea89-422e-a690-1b133676fe7c" />
 
 COMPUERTA OR  
