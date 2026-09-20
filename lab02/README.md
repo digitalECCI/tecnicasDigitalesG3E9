@@ -48,36 +48,37 @@ Módulo de verificación que instancia el diseño y aplica estímulos controlado
 Este módulo implementa la lógica combinacional del sumador completo mediante compuertas primitivas.
 
 
-![alt text](<codigo_4bits sumador .png>)
+![alt text](<imagenes/codigo_4bits sumador .png>)
 
 ### 4.2 Módulo `sumadorfour` (sumador de 4 bits)
 
-![alt text](codigo_4bits01.png)
+![alt text](imagenes/codigo_4bits01.png)
 
 
 Dos entradas de 4 bits cada una (buses), representadas como vectores [3:0] → bit 3 (más significativo) al bit 0 (menos significativo). Son los dos números que se van a sumar.
 
 
 
-![alt text](codigo_4bits02.png)
+![alt text](imagenes/codigo_4bits02.png)
 
 Se instancian cuatro sumadores completos, propagando el acarreo (Co → Ci) de una etapa a la siguiente. El primer bit recibe un acarreo de entrada fijo en `0`.
 
 ### 4.3 Banco de pruebas `sumadorfour_TB`
 
-![alt text](<simuladorCuatroBits 01.png>)
+
+![alt text](<imagenes/simuladorCuatroBits 01.png>)
 
 
 El testbench recorre todas las combinaciones de `A` (0–15), `B` (0–15) y `Ci` (0–1), aplicando cada combinación durante 5 unidades de tiempo, lo que permite observar el resultado en el simulador de formas de onda.
 
-![alt text](simuladorCuatroBits.png)
+![alt text](imagenes/simuladorCuatroBits.png)
 
-![alt text](<simuladorCuatroBits 04.png>)
+![alt text](<imagenes/simuladorCuatroBits 04.png>)
 
 ### Bucle for
 Declara tres variables de tipo integer (enteros de 32 bits, con signo) que se usarán como contadores de los bucles for. En Verilog no se pueden declarar variables dentro del for como en C, así que se declaran antes.
 
-![alt text](<simuladorCuatroBits 02.png>)
+![alt text](<imagenes/simuladorCuatroBits 02.png>)
 
 
 - Bloque initial: se ejecuta una sola vez, comenzando en el tiempo de simulación 0.
@@ -87,7 +88,7 @@ Declara tres variables de tipo integer (enteros de 32 bits, con signo) que se us
 - Bucle más interno. j recorre 0 a 15 → todas las combinaciones posibles del valor de B.
 - En cada iteración se asignan los valores actuales de los contadores a las señales del testbench que alimentan al sumadorfour. Como A_TB y B_TB son reg [3:0], el entero i/j se trunca automáticamente a 4 bits.
 
-    ![alt text](<simuladorCuatroBits 03.png>)
+    ![alt text](<imagenes/simuladorCuatroBits 03.png>)
 
 Es decir, se prueban todos los valores posibles de A (0–15), B (0–15) y Ci (0 ó 1), cubriendo el espacio de entradas del sumador de 4 bits.
 
