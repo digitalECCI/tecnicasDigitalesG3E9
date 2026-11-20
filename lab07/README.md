@@ -61,6 +61,7 @@ Esta variable funciona como un cronómetro.
 
 ### 3.2 Módulo uart_tx.v
 
+
 Transmite un dato de 8 bits mediante el protocolo UART.
 
 `Funcionamiento`
@@ -70,6 +71,9 @@ Cuando recibe una orden de inicio, almacena el dato en un registro interno y gen
 * Bit de inicio (Start).
 + 8 bits de datos.
 * Bit de parada (Stop).
+
+![alt text](imagenes/tx.png)
+
 
 La transmisión se realiza un bit por cada pulso de baud_tick.
 
@@ -106,6 +110,8 @@ El módulo separa el número en centenas, decenas y unidades mediante divisiones
 
 * `digit0 = 8'd48 + d0;`
 Convierte un dígito numérico al carácter ASCII correspondiente.
+
+![alt text](imagenes/bin2dec.png)
 
 ### 3.5 Módulo dec2bin.v
 
